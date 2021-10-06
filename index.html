@@ -1,0 +1,243 @@
+<!-- Assignment 2 - Building an HTML for given web page design -->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Modern</title>
+        <link rel="stylesheet" href="dist/main.css">
+    </head>
+    <body>
+        <section> 
+            <!-- Header containing logo and navigation panel -->
+            
+            <div class="container">
+                <div class="logo">    
+                    <!-- Logo -->
+                    <Figure>
+                        <img src="images/Group 9739.png" alt="Logo" width="100px" height="">                     
+                    </Figure> 
+                </div>
+                <div class="nav">
+                    <!-- Navigation panel -->
+                    <h1>Home</h1> &ensp;&ensp;&ensp;&ensp;&ensp;
+                    <h1>About</h1> &ensp;&ensp;&ensp;&ensp;&ensp;
+                    <h1>Featured</h1> &ensp;&ensp;&ensp;&ensp;&ensp;
+                    <h1>Contact</h1> &ensp;&ensp;&ensp;&ensp;&ensp;
+                </div>
+                <div class="search">
+                    <!-- Search bar and Login button -->
+                    <input type="text" placeholder="Saved Search" name="search">  
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTp1JV9sRHb-oR3PTfmCQSuQrfgKZzELU6Zw&usqp=CAU" alt="notification" width="20px" height="20px">
+                    <button type="submit" name="login">Login</button>
+                </div>
+            </div>    
+        
+        </section>
+        
+        <section class="page1">         
+            <!-- First page of actual web page containing search criteria -->
+            <div>
+                <article>
+                    <!-- First two images on left -->
+                    <figure>
+                        <img src="images/Let’s find  yours Dream...png" alt="img1" width="520px">
+                        <figcaption>
+                            <img src="images/Building award winning properties across London  UK and the All world.png" alt="img2" width="350px">
+                        </figcaption>
+                    </figure>
+                </article>
+                <article>
+                    <!-- Search Criteria -->
+                    <h1 name="selected">Buy</h1> &nbsp;
+                    <h1>Sell</h1> &nbsp;
+                    <h1>Rent</h1> <br><br>
+                    <div>
+                        <form action="">
+                            <fieldset>
+                                <!-- Input for city - required field -->
+                                <label for="city">City/Street</label>
+                                <input type="text" name="city" placeholder="Enter City" required minlength="3" maxlength="15">
+                                &nbsp;&nbsp;
+                                <!-- Choice of apartment from the dropdown - required field-->
+                                <label for="apartment">Apartment Type</label>
+                                <select name="apartment" required>
+                                    <option value="Deluxe" selected>Deluxe Portion</option>
+                                    <option value="Double">Double Height</option>
+                                    <option value="PH">Penthouse</option>
+                                    <option value="Studio">The Studio</option>
+                                    <option value="Garden">Top Garden</option>
+                                </select>
+                                &nbsp;&nbsp;
+                                <!-- Choice of price range -->
+                                <label for="price">Price Range</label>                        
+                                <select name="price" id="price">
+                                    <option value="0" selected>Min price - Max price</option>
+                                    <option value="1">100K-300K</option>
+                                    <option value="2">300K-600K</option>
+                                    <option value="3">600K-900K</option>
+                                    <option value="4">900k+</option>
+                                </select>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                <a href="">+ Advance Filter</a>
+                                <button type="submit" id="submit">Search</button>
+                            </fieldset>
+                        </form>
+                    </div>
+                </article>
+            </div>
+        </section>
+        <section class="page2">
+            <!-- Next page containing details on the type of apartment selected -->
+            <div class="pg2-part1">
+                <h1>Hi, What do you want to your <br> Dream Apartment</h1>
+                <h3>Select a Apartment type below to begins</h3>
+                <div>
+                    <!-- First set of images of apartment types -->
+                    <figure>
+                        <img src="images/deluxe.jpg" alt="Deluxe">
+                        <figcaption>Deluxe</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="images/double height.jpg" alt="Double Height">
+                        <figcaption>Double Height</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="images/penthouse.jpg" alt="Penthouse">
+                        <figcaption>Penthouse</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="images/studio.jpg" alt="The Studio">
+                        <figcaption>The Studio</figcaption>
+                    </figure>
+                </div>
+                <div>
+                    <!-- Continue Button -->
+                    <button>Continue</button>
+                </div> <br> <br> <br>
+                <h1>Featured Apartment</h1>
+                <h3>The most frequently searched and most popular apartment of the application will be in the list</h3>
+                <div class="image-set-2">
+                    <!-- Second set of images of apartments available -->
+                    <figure>
+                        <img src="images/Mask Group 4.png" alt="Apartment London">
+                        <figcaption>
+                            <p class="location">Knightsbridge</p>
+                            <p class="rate">$2500</p>
+                            <p class="apt-name">Apartment London</p>
+                            <p class="apt-desc">Beautiful Huge 1 Family House In Heart Of Westbury Newly Renovated With New Furniture</p>
+                        </figcaption>
+                    </figure>
+                    <figure>
+                        <img src="images/Mask Group -1.png" alt="Studio Apartment">
+                        <figcaption>
+                            <p class="location">Belmont Gardens, Chicago</p>
+                            <p class="rate">$30,000</p>
+                            <p class="apt-name">Studio Apartment</p>
+                            <p class="apt-desc">Beautiful Huge 1 Family House In Heart Of Westbury Newly Renovated With New Furniture</p>
+                        </figcaption>
+                    </figure>
+                    <figure>
+                        <img src="images/Mask Group -2.png" alt="Galliard Homes Apartment">
+                        <figcaption>
+                            <p class="location">Timber Yard, Birmingham City Centre, B5</p>
+                            <p class="rate">$379,000</p>
+                            <p class="apt-name">Galliard Homes Apartment</p>
+                            <p class="apt-desc">This Fabulous Two Bedroom Duplex Apartment Will Be Close To Some Of The Best Local Haunts And Venues The City Has To Offer</p>
+                        </figcaption>
+                    </figure>
+                </div>
+            </div>
+
+            <!-- Header for types of apartments -->
+            <header> <h1>Apartment Plans</h1></header>
+            <div>            
+                <p>
+                    <strong>The Studio</strong>   &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;
+                    <a href=""><strong>Deluxe Portion</strong></a>  &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;
+                    <strong>Penthouse</strong>  &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;
+                    <strong>Top Garden</strong>  &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;
+                    <strong>Double Height</strong> &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;
+                </p> 
+            </div>
+            <!-- Description of apartment selected -->
+            <div class="pg2-part2">
+                <div>
+                    <p>
+                        <b>Deluxe Portion</b><br><br>
+                        Boasting chic interiors, three private balconies and a remarkable terrace,<br>
+                        this two bedroom apartment will epitomise complete luxury, Not only will <br>
+                        residents benefit from a superb location in the heart of Shoreditch, but <br>
+                        they will also enjoy unrivalled facilites and a 24-hour bespoke concierge.                        
+                    </p>
+                    <ul>
+                        <li>Total Area     ........................................ 2800 Sq. Ft</li>
+                        <li>Bedroom        ........................................ 2800 Sq. Ft</li>
+                        <li>Bathroom       ........................................ 2800 Sq. Ft</li>
+                        <li>Smokiing/ pets ........................................ 2800 Sq. Ft</li>
+                        <li>Lounge         ........................................ 2800 Sq. Ft</li>
+                    </ul>
+                </div>
+                <!-- Floor plan of apartment selected -->
+                <img src="images/Image 6.png" alt="plan" width="400px">
+            </div>
+        </section>
+        <section class="page3">
+            <!-- Look through for all kinds of apartments available -->
+            <div>
+                <section>
+                    <h1>Buy</h1>
+                    <h1>Dream Apartment</h1>
+                    <h1>in Prime Location</h1>
+                    <!-- Button to see all apartments -->
+                    <button><h1>See All Apartment</h1></button>                    
+                </section>
+                <section>
+                    <!-- Merged 4 images to create a picture overlapping view -->
+                    <div>                       
+                        <img src="images/Union 2.png" alt="Image1" width="200px"> 
+                        <img src="images/THE-SELECT-TEN----Bedroom-Apartment---Wintergarden-(Floor-33-34).png" alt="Image2" width="700px"> 
+                        <img src="images/delux2.png" alt="Image3" width="300px">
+                        <img src="images/Group 9722.png" alt="Image4" width="80px">
+                    </div>
+                </section>
+            </div>
+        </section>
+        <section class="footer">
+            <!-- Footer containing additional data -->
+            <div>
+                <section>
+                    <figure>
+                        <img src="images/Group 9739.png" alt="Logo">
+                        <figcaption>
+                            <p>The most beautiful exclusive <br>properties and luxury apartments</p> 
+                            <!-- Social Media handles of the apartment -->
+                            <img src="images/Group 9740.png" alt="Facebook">
+                            <img src="images/Group 9741.png" alt="Twitter">
+                            <img src="images/Group 9742.png" alt="Instagram">
+                            <img src="images/Group 9743.png" alt="Telegram">
+                        </figcaption>
+                    </figure>
+                </section>
+                <!-- Links to various additional info-->
+                <section>                    
+                    <p> <b>Useful Links</b> <br><br>
+                        About<br>
+                        Partners<br>
+                        Contact
+                    </p>
+                </section>
+                <section>
+                    <p> <b>Help?</b> <br><br>
+                        FAQ <br>
+                        Term & Condition <br>
+                        Policy <br>
+                        Privacy 
+                    </p>
+                </section>
+            </div>
+            <!-- Copyright -->
+            <div>
+                <p>© Copyright 2021, morden.com</p> 
+            </div>
+        </section>
+    </body>
+</html>

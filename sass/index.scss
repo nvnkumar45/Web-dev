@@ -1,0 +1,188 @@
+@import 'variables';
+/* Variables used in the page are 
+Background color - #{$background-color-blue}
+Font color(white) - #{$font-color-white}
+Font color(grey) - #{$font-color-grey}
+*/
+@import 'mixins';
+@import 'header';
+@import 'footer';
+
+body{ 
+    padding: 25px;
+}
+@for $var from 1 to 4 {
+    .page#{$var}{
+        margin-top: 50px;
+    }
+}
+
+.applyTheme{
+    background-color:$background-color-blue;
+    color: $font-color-white;
+}
+
+// First page 
+
+.page1>div{
+    height:800px;
+    background-image: url("../images/pierre-chatel-innocenti-gxyeia7Syuk-unsplash.png");    
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: right;
+}
+.page1>div figure{
+    align-content: center;
+    background-image: url("../images/Rectangle\ 102.png");
+    background-repeat: no-repeat;
+    background-size: 650px;
+    background-position: -100px;
+    height: 430px;
+    padding-top: 150px;
+}
+.page1 h1{
+    display: inline;
+}
+.page1 article h1[name="selected"]{
+    color:$background-color-blue;
+}
+.page1 form fieldset{
+    background-image: url("../images/Rectangle\ 113.png");
+    width: fit-content;
+}
+// Second Page 
+.page2{
+text-align: center;
+}
+.pg2-part1{
+    h1{
+        color:$background-color-blue;
+        font-size: 50px;
+    }
+    
+    h3{
+        color: $font-color-grey;
+    }
+    
+    figure{
+        display: inline-block;
+        padding: 30px;
+    }
+    figure figcaption{
+        color: $font-color-grey;
+        margin-left: 15px;
+    }
+    img{
+        width: 220px;
+        height: 150px;
+        @include border-mixin(30px);
+    }
+    
+}
+
+.pg2-part1 > div+div button{
+    @extend .applyTheme;
+    font-size: x-large;
+    @include border-mixin(5px);
+    width: 250px;
+    height: 50px;
+}
+// For different p elements 
+.location{
+color: $font-color-grey;
+font-size: small;
+}
+.rate{
+color:$background-color-blue;
+font-weight: bold;
+}
+.apt-name{
+font-weight: bold;
+color: black;
+}
+.apt-desc{
+color: $font-color-grey;
+font-size: x-small;
+}
+
+// Second set of images of the div - pg2-part1  
+.image-set-2{
+    figure{
+        @include outer-border-mixin(1px)
+    }
+    
+    figure img{
+        width: 320px;
+        height: 250px;
+        @include border-mixin(30px);
+    }
+    
+    figcaption{
+        color: $font-color-grey;
+        text-align: left;
+        width: 300px;
+    }
+    
+    figcaption > p{
+    margin: 5px;
+    }
+    
+}
+
+
+// Page 2 part 2 - Apartment Plans 
+
+.pg2-part2 div:first-child{
+    @extend .applyTheme;
+    float: left;
+    padding: 20px;
+}
+
+// Page 3 - Multiple images 
+
+.page3 div{
+    display: flex;
+    height: 600px;
+}
+
+.page3 section:first-child{
+    width: 30%;
+    text-align: center;
+    margin-top: 50px;
+    font-size: 35px;
+}
+.page3 section:first-child button{
+    @extend .applyTheme;
+    @include border-mixin(15px);
+    width: 200px;
+    height: 50px;
+}
+.page3 section:last-child{
+    width: 70%;
+}
+.page3 section:last-child>div{
+    position: relative;
+}
+.page3 section:last-child img:first-child{
+    position: relative;
+    height: fit-content;
+    @include border-mixin(30px);
+}
+.page3 section:last-child img:first-child+img{
+    position: absolute;
+    left: 100px;
+    @include border-mixin(30px);
+}
+.page3 section:last-child img:first-child+img+img{
+    position: absolute;
+    left: 0px; 
+    top: 300px;
+    @include border-mixin(30px);
+}
+.page3 section:last-child img:last-child{
+    position: absolute;
+    left: 110px;
+    top: 365px;
+    @include border-mixin(30px);
+}
+

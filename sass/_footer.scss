@@ -1,0 +1,21 @@
+// Footer 
+
+.footer div:first-child{
+    background-image: url("../images/Path\ 2954.png");
+    color: $font-color-white;
+    display: flex; 
+    padding: 5px;
+}
+
+.footer div:first-child section{
+    width: 33%;
+}
+.footer div:last-child{
+    background-image: url("../images/Rectangle\ 128.png");
+    color: $font-color-white;
+    padding: 1px;
+}
+
+.footer div:last-child p{
+    margin-left : 35px;
+}

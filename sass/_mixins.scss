@@ -1,0 +1,11 @@
+// Contains all the mixins
+@mixin  outer-border-mixin($value) {
+    border: $value solid #868484;
+    box-shadow: black;
+    border-radius: 30px;
+    padding: 0px;
+}    
+
+@mixin border-mixin($value) {
+    border-radius: $value;
+}
